@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+      background-color: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .credencial {
+      width: 320px;
+      height: 500px;
+      /* Se añade la imagen como fondo cubriendo toda la tarjeta */
+      background: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0)), url('fondoCredencial.jpg') no-repeat center center;
+      background-size: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #104473;
+    }
+    .header {
+      /* Fondo semitransparente para que el texto sea legible sobre la imagen */
+      
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+    }
+    .header h2 {
+      margin: 0;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+    .header p {
+      margin: 5px 0 0;
+      font-size: 11px;
+      opacity: 0.9;
+    }
+    .photo-container {
+      display: flex;
+      justify-content: center;
+      margin-top: -30px;
+      padding: 10px 0;
+    }
+    .photo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 4px solid white;
+      object-fit: cover;
+      background-color: #ccc;
+    }
+    .info {
+      text-align: center;
+      padding: 0 15px;
+      flex-grow: 1;
+    }
+    .info h3 {
+      margin: 15px 0 2px;
+      font-size: 20px;
+      color: #ffffff;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+    }
+    .info .cargo {
+      color: #00d2ff;
+      font-size: 13px;
+      margin-bottom: 15px;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+    }
+    .details {
+      text-align: left;
+      /* Fondo semitransparente oscuro para contrastar con los textos */
+      background: rgba(255, 255, 255, 0.9);
+      padding: 12px 20px;
+      font-size: 13px;
+      border-top: 1px solid rgba(255,255,255,0.3);
+      margin: 15px;
+      border-radius: 8px;
+    }
+    .details p {
+      margin: 6px 0;
+      display: flex;
+      justify-content: space-between;
+      color: #333;
+    }
+    .details span {
+      font-weight: bold;
+      color: #104473;
+    }
+    .footer {
+      background: rgba(16, 68, 115, 0.9);
+      text-align: center;
+      padding: 10px;
+      font-size: 10px;
+      color: #ffffff;
+    }
